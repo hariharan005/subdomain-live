@@ -14,12 +14,15 @@ def banner():
 banner()
 print("")
 domain = input("Enter the domain : ")
+print("")
 org = input("Enter the org example: .com, .in, .pk etc... : ")
+print("")
 with open('demosub.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     for line in csvreader:
         sub = line[0]
         url = ("https://"+sub+"."+domain+org)  #https://example.com
+        print("")
         print(url)
         try:
             r = requests.get(url, allow_redirects=False)
