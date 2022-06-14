@@ -1,7 +1,18 @@
 import csv
 import os
 import requests
+from colorama import init
+from termcolor import colored
 
+def banner():
+    print(colored("  __        __                  ___ ",'cyan'))
+    print(colored(" /__` |  | |__) __ |    | \  / |__  ",'cyan'))
+    print(colored(" .__/ \__/ |__)    |___ |  \/  |___ ",'cyan'))
+    print("")
+    print(colored("    Author: Hariharan",'green'))
+                                   
+banner()
+print("")
 domain = input("Enter the domain : ")
 org = input("Enter the org example: .com, .in, .pk etc... : ")
 with open('demosub.csv', 'r') as csvfile:
