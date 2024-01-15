@@ -29,7 +29,7 @@ with open('subdomain.csv', 'r') as csvfile:
             code = r.status_code
             stat = url + "   <---- [ {} ]".format(r.status_code)
             print(stat)
-            f = open(domain+".csv", "a+")
+            f = open(domain+".txt", "a+")
             f.write(stat+ '\n')
         except:
             print("URL not found")
