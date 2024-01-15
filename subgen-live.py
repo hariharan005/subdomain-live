@@ -17,7 +17,7 @@ domain = input("Enter the domain : ")
 print("")
 org = input("Enter the org example: .com, .in, .pk etc... : ")
 print("")
-with open('demosub.csv', 'r') as csvfile:
+with open('subdomain.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     for line in csvreader:
         sub = line[0]
